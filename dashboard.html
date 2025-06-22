@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="app.js" defer></script>
+</head>
+<body onload="checkAuth()">
+  <div class="container">
+    <h2>Welcome to LearnX 👋</h2>
+    <p>Select a lesson:</p>
+    <div class="card-grid">
+      <div class="card">
+        <h3>HTML Basics</h3>
+        <a href="lesson.html" class="btn">Start</a>
+      </div>
+      <div class="card">
+        <h3>CSS Styling</h3>
+        <a href="lesson.html" class="btn">Start</a>
+      </div>
+      <div class="card">
+        <h3>JavaScript Intro</h3>
+        <a href="lesson.html" class="btn">Start</a>
+      </div>
+    </div>
+    <br>
+    <button class="btn btn-outline" onclick="logout()">Logout</button>
+  </div>
+</body>
+</html>
