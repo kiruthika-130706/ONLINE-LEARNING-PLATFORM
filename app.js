@@ -1,4 +1,4 @@
-// Store new user
+
 function handleSignup(e) {
   e.preventDefault();
   const name = document.getElementById("signupName").value;
@@ -12,7 +12,7 @@ function handleSignup(e) {
   window.location.href = "dashboard.html";
 }
 
-// Log user in
+
 function handleLogin(e) {
   e.preventDefault();
   const email = document.getElementById("loginEmail").value;
@@ -27,7 +27,7 @@ function handleLogin(e) {
   }
 }
 
-// Check if logged in before accessing dashboard
+
 function checkAuth() {
   if (localStorage.getItem("isLoggedIn") !== "true") {
     alert("Please log in first.");
@@ -35,7 +35,7 @@ function checkAuth() {
   }
 }
 
-// Logout function
+
 function logout() {
   localStorage.removeItem("isLoggedIn");
   alert("Logged out!");
